@@ -1,0 +1,15 @@
+{
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        }
+    },
+
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        }
+    }
+}
