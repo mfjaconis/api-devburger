@@ -3,7 +3,7 @@ import Sequelize from "sequelize";
 
 import Category from "../app/models/Category.js";
 import User from "../app/models/User.js";
-import Product from "./../app/models/Product";
+import Product from "./../app/models/Product.js";
 
 const models = [User, Product, Category];
 
