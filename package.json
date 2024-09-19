@@ -1,12 +1,12 @@
 {
   "name": "devburger-api",
-  "license": "MIT",
   "scripts": {
     "start": "node src/server.js",
     "build": "babel src -d lib",
     "test": "jest",
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon src/server.js"
   },
+  "license": "MIT",
   "author": {
     "name": "Matheus Jaconis",
     "url": "https://github.com/mfjaconis"
@@ -26,7 +26,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.25.2",
