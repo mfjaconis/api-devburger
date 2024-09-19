@@ -1,5 +1,6 @@
 {
   "name": "devburger-api",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "build": "babel src -d lib",
