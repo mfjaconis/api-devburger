@@ -1,9 +1,14 @@
 import cors from "cors";
 import express from "express";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "url";
 import routes from "./routes.js";
 
 import "./database/index.js";
+
+// Define __filename e __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 class App {
 	constructor() {
@@ -11,7 +16,6 @@ class App {
 		this.app.use(cors());
 
 		this.middlewares();
-
 		this.routes();
 	}
 
