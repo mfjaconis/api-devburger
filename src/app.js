@@ -6,14 +6,18 @@ import routes from "./routes.js";
 
 import "./database/index.js";
 
-// Define __filename e __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+const corsOptions = {
+	origin: "https://devburguer-rouge.vercel.app",
+	credentials: true,
+};
 
 class App {
 	constructor() {
 		this.app = express();
-		this.app.use(cors());
+		this.app.use(cors(corsOptions));
 
 		this.middlewares();
 		this.routes();
